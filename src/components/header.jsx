@@ -33,7 +33,7 @@ const Header = ({ toggleSidebar }) => {
         {/* BOTÓN MOBILE CON ANIMACIÓN SNAKE (4 SPANS) */}
         <button 
           onClick={toggleSidebar}
-          className="md:hidden snake-btn text-white hover:text-red-500 text-3xl transition-colors"
+          className="md:hidden snake-btn text-black hover:text-red-500 text-3xl transition-colors"
         >
           {/* 🔥 ESTOS 4 SPANS SON LAS LÍNEAS DE LUZ (NO LOS BORRES) */}
           <span></span>
