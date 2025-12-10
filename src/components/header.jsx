@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 const Header = ({ toggleSidebar }) => {
   return (
     <header className="w-full fixed top-0 left-0 right-0 z-50 
@@ -14,15 +12,11 @@ const Header = ({ toggleSidebar }) => {
           <div className="relative">
              {/* Efecto de resplandor detrás del logo */}
              <div className="absolute inset-0 bg-red-600 blur-lg "></div>
-           
           </div>
-         
 
           {/* LOGO 2 */}
-
            <div className="relative">
-             {/* Efecto de resplandor detrás del logo */}
-             <div className="absolute inset-0  blur-lg "></div>
+             <div className="absolute inset-0 blur-lg"></div>
              <img 
               src="/img/fondo2.png" 
               alt="Thimar Store Logo" 
@@ -37,11 +31,18 @@ const Header = ({ toggleSidebar }) => {
           <a href="#" className="text-gray-300 hover:text-red-400 hover:scale-105 transition duration-300">About</a>
         </nav>
 
-        {/* BOTÓN MOBILE */}
+        {/* --- BOTÓN MOBILE CON SERPIENTE RESTAURADA --- */}
         <button 
           onClick={toggleSidebar}
-          className="md:hidden text-black  hover:text-red-500 transition-colors text-3xl"
+          className="md:hidden snake-btn text-white hover:text-red-500 text-3xl font-bold"
         >
+          {/* Estos 4 spans son OBLIGATORIOS para la animación del CSS */}
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          {/* El ícono de menú */}
           ☰
         </button>
 
