@@ -1,8 +1,8 @@
-import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const FloatingWA = () => {
-    return (
+  return (
     <a
       href="https://wa.me/3005274404"
       target="_blank"
@@ -11,7 +11,7 @@ const FloatingWA = () => {
     >
       <FaWhatsapp size={35} />
     </a>
-  );    
+  );
 };
 
 export default FloatingWA;
