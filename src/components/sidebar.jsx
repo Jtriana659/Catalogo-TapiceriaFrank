@@ -88,7 +88,7 @@ const Sidebar = ({ selected, onSelect, isOpen }) => {
 
         <div className="flex flex-col items-center space-y-4">
           <a
-            href="https://wa.me/573005274404"
+            href="https://wa.me/+573005274404"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-3 bg-zinc-900 border border-zinc-800 px-4 py-2 rounded-full hover:border-green-500/50 transition w-full justify-center shadow-lg"
