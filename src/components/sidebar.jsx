@@ -9,6 +9,7 @@ const Sidebar = ({ selected, onSelect, isOpen }) => {
     "Renault",
     "Volkswagen",
     "KIA",
+    "Toyota",
     "Nissan",
     "Ford",
     "BMW",
@@ -16,7 +17,7 @@ const Sidebar = ({ selected, onSelect, isOpen }) => {
   ];
 
   // Lista 2: Días Especiales
-  const diasEspeciales = ["Techos", "Pisos", "Carteras", "Otros"];
+  const otros = ["Techos", "Pisos", "Carteras", "Timones", "Otros"];
 
   return (
     <aside
@@ -62,7 +63,7 @@ const Sidebar = ({ selected, onSelect, isOpen }) => {
         Servicios
       </h2>
       <ul className="space-y-2">
-        {diasEspeciales.map((cat) => (
+        {otros.map((cat) => (
           <li
             key={cat}
             onClick={() => onSelect(cat)}
@@ -100,7 +101,7 @@ const Sidebar = ({ selected, onSelect, isOpen }) => {
               300-5274404
             </span>
           </a>
-{/* 
+          {/* 
           <a
             href="https://www.facebook.com/profile.php?id=61572086377286"
             target="_blank"

@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const Header = ({ toggleSidebar }) => {
   return (
     <header className="w-full fixed top-0 left-0 right-0 z-50 
@@ -11,17 +13,22 @@ const Header = ({ toggleSidebar }) => {
         <div className="flex items-center gap-3">
           <div className="relative">
              {/* Efecto de resplandor detrás del logo */}
-             <div className="absolute inset-0 bg-red-600 blur-lg opacity-40 rounded-full"></div>
+             <div className="absolute inset-0 bg-red-600 blur-lg "></div>
+           
+          </div>
+         
+
+          {/* LOGO 2 */}
+
+           <div className="relative">
+             {/* Efecto de resplandor detrás del logo */}
+             <div className="absolute inset-0  blur-lg "></div>
              <img 
-              src="./public/img/logo.jpg" 
+              src="/img/fondo2.png" 
               alt="Thimar Store Logo" 
-              className="relative w-12 h-12 rounded-full border-2 border-red-500 object-cover"
+              className="relative w-40 h-14 rounded-full object-cover"
             />
           </div>
-          
-          <h1 className="text-2xl font-bold text-white tracking-wide">
-            Tapiceria <span className="text-red-500 drop-shadow-[0_0_5px_rgba(239,68,68,0.8)]">Frank</span>
-          </h1>
         </div>
 
         {/* NAV DESKTOP */}
@@ -30,18 +37,11 @@ const Header = ({ toggleSidebar }) => {
           <a href="#" className="text-gray-300 hover:text-red-400 hover:scale-105 transition duration-300">About</a>
         </nav>
 
-        {/* BOTÓN MOBILE CON ANIMACIÓN SNAKE (4 SPANS) */}
+        {/* BOTÓN MOBILE */}
         <button 
           onClick={toggleSidebar}
-          className="md:hidden snake-btn text-black hover:text-red-500 text-3xl transition-colors"
+          className="md:hidden text-black  hover:text-red-500 transition-colors text-3xl"
         >
-          {/* 🔥 ESTOS 4 SPANS SON LAS LÍNEAS DE LUZ (NO LOS BORRES) */}
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          
-          {/* ÍCONO */}
           ☰
         </button>
 
